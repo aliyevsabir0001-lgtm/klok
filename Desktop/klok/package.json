@@ -1,0 +1,39 @@
+
+{
+  "name": "casino-rehber",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rmdir /s /q .next && rmdir /s /q node_modules && del package-lock.json",
+    "fresh-install": "npm run clean && npm install",
+    "windows-build": "npm run fresh-install && npm run build"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19", 
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "os": ["win32"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/casino-rehber.git"
+  }
+}
